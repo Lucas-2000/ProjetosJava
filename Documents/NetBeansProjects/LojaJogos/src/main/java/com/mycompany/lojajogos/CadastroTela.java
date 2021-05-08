@@ -116,8 +116,7 @@ public class CadastroTela extends javax.swing.JFrame {
         
         LoginTela telaLogin = new LoginTela();
         telaLogin.setVisible(true);
-        this.dispose();
-        
+        this.dispose();       
     }//GEN-LAST:event_cadastrarButtonActionPerformed
 
     /**

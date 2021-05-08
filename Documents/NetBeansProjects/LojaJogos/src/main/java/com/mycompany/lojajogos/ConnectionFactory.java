@@ -12,6 +12,7 @@ public class ConnectionFactory {
     private String bd = "db_lojajogos";
 
     public Connection obtemConexao() {
+        
         try {
             Connection c = DriverManager.getConnection("jdbc:mysql://" + host + ":"
                     + porta + "/" + bd, usuario, senha);
