@@ -30,7 +30,7 @@ public class Cadastro {
 
             pst.setString(1, this.login);
             pst.setString(2, this.senha);
-
+           
             pst.execute();
 
             JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");
