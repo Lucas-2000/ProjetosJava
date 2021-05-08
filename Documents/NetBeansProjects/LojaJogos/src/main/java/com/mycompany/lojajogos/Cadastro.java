@@ -33,6 +33,8 @@ public class Cadastro {
 
             pst.execute();
 
+            JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");
+
         } catch (Exception ex) {
             ex.printStackTrace();
         }

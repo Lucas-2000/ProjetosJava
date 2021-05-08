@@ -112,7 +112,7 @@ public class CadastroTela extends javax.swing.JFrame {
         
         Cadastro cadastrar = new Cadastro(login, senha);
         
-        JOptionPane.showMessageDialog(null, "Cadastro realizado com sucesso");
+        cadastrar.salvar();
         
         LoginTela telaLogin = new LoginTela();
         telaLogin.setVisible(true);
