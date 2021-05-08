@@ -106,17 +106,20 @@ public class CadastroTela extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cadastrarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cadastrarButtonActionPerformed
-        
-        String login = loginTextField.getText();
-        String senha = senhaTextField.getText();
-        
-        Cadastro cadastrar = new Cadastro(login, senha);
-        
-        cadastrar.salvar();
-        
-        LoginTela telaLogin = new LoginTela();
-        telaLogin.setVisible(true);
-        this.dispose();       
+        try {
+            String login = loginTextField.getText();
+            String senha = senhaTextField.getText();
+
+            Cadastro cadastrar = new Cadastro(login, senha);
+
+            cadastrar.salvar();
+
+            LoginTela telaLogin = new LoginTela();
+            telaLogin.setVisible(true);
+            this.dispose();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }//GEN-LAST:event_cadastrarButtonActionPerformed
 
     /**

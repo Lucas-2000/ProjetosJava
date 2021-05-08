@@ -24,7 +24,7 @@ public class Cadastro {
         String sql = "INSERT INTO tb_cadastro (login, senha) VALUES (?, ?)";
 
         ConnectionFactory factory = new ConnectionFactory();
-
+        
         try (Connection con = factory.obtemConexao()) {
             PreparedStatement pst = con.prepareStatement(sql);
 
